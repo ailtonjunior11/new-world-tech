@@ -1,0 +1,157 @@
+.home {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.home-img {
+  position: relative;
+  width: 25.5rem;
+  animation: move 6s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  max-width: 700px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.home-text p {
+  font-size: 1.375rem;
+  max-width: 550px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.home-button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.home-button a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 40px;
+
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  box-shadow: 3px 3px 5px var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 320px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .home img {
+    width: 80%;
+    /* display: none; */
+  }
+
+  .home-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .home-text p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    gap: 1rem;
+  }
+
+  .home img {
+    display: block;
+    width: 40%;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .home-text p {
+    max-width: 500px;
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .home img {
+    width: 30%;
+  }
+
+  .home-text {
+    max-width: 36.9rem;
+  }
+
+  .home-text p {
+    font-size: 1.375rem;
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home {
+    gap: 7.5rem;
+  }
+
+  .home img {
+    width: 34%;
+  }
+
+  .home-text {
+    max-width: 44.6rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.9rem;
+  }
+
+  .home-text p {
+    font-size: 1.375rem;
+    max-width: 38rem;
+  }
+
+  .home-button:hover {
+    transform: scale(1.1);
+  }
+}

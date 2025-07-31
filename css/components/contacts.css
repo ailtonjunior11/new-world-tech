@@ -1,0 +1,149 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contacts h2 {
+  margin-top: 1.1rem;
+}
+
+.content-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--background-color);
+}
+
+form h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+form input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 1rem;
+}
+
+form textarea {
+  width: 100%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0 0 1rem;
+  resize: none;
+}
+
+form button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+form button:active {
+  opacity: 0.7;
+}
+
+.contacts-social {
+  display: flex;
+  gap: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
+}
+
+.contacts-social i {
+  color: var(--text-color);
+  font-size: 1.35rem;
+  transition: all 0.3s;
+}
+
+/* Responsividade */
+
+/* Telas menores celulares */
+@media (min-width: 320px) {
+  .contacts {
+    justify-content: center;
+  }
+
+  .content-contacts {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contacts-social {
+    flex-direction: row;
+    gap: 3.2rem;
+    border-radius: 1rem;
+    padding: 1rem 2.2rem;
+  }
+}
+
+/* Telas medias tablets */
+@media (min-width: 768px) {
+  .content-contacts {
+    flex-direction: row;
+  }
+
+  .contacts-social {
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  form {
+    width: 75%;
+  }
+
+  .contacts-social {
+    width: 5%;
+  }
+}
+
+@media (min-width: 1280px) {
+  form {
+    width: 55%;
+  }
+
+  .contacts-social i:hover {
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+  }
+}

@@ -1,0 +1,78 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -18.75rem;
+  z-index: 9;
+
+  width: 12.5rem;
+  height: 100%;
+
+  background-color: var(--background-color);
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu ul {
+  padding: 0;
+  margin-top: 3.75rem;
+}
+
+.side-menu ul li {
+  padding: 0.9375rem 1.875rem;
+  transition: 0.3s;
+}
+
+.side-menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.side-menu ul li a i {
+  font-size: 1.4375rem;
+}
+
+.side-menu ul li:hover {
+  background-color: var(--secondary-color);
+}
+
+.side-menu ul li a i:hover {
+  transform: translateX(-0.3125rem) rotate(10deg);
+}
+
+.menu-button {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 10;
+
+  font-size: 1.5rem;
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 0.3125rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.menu-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.menu-button.active {
+  left: 12.5rem;
+}
+
+.close-button {
+  display: none;
+}

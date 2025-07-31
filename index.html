@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Link do Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- Link do Swiper -->
+  <link rel="stylesheet" href="./css/extensions.css"> <!-- Link do CSS -->
+  <title>New World Tech</title>
+</head>
+
+<body>
+
+  <button class="menu-button">
+    <i class="fa-solid fa-bars open-button" title="Abrir menu"></i>
+    <i class="fa-solid fa-xmark close-button" title="Fechar Menu"></i>
+  </button> <!-- Botão do menu abrir e fechar -->
+
+  <nav class=" side-menu"> <!-- Inicio do nav -->
+    <ul>
+      <li>
+        <a href="#home" class="link-menu">
+          <i class="fa-solid fa-house-chimney"></i>
+          Início
+        </a>
+      </li>
+      <li>
+        <a href="#products" class="link-menu">
+          <i class="fa-solid fa-box"></i>
+          Produtos
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="link-menu">
+          <i class="fa-solid fa-circle-info"></i>
+          Sobre
+        </a>
+      </li>
+      <li>
+        <a href="#contacts" class="link-menu">
+          <i class="fa-solid fa-headset"></i>
+          Contatos
+        </a>
+      </li>
+    </ul>
+  </nav> <!-- Fim do nav -->
+
+  <div class="background"></div> <!-- Fundo da página -->
+
+  <main class="main-content"> <!-- Inicio do Main -->
+    <section class="home" id="home"> <!-- Inicio da section home -->
+      <div class="home-text"> <!-- Inicio do home-text -->
+        <h1>
+          <strong>NWT:</strong>
+          <small>
+            <i>O futuro da tecnologia está aqui!</i>
+          </small>
+        </h1> <!-- Titulo da Home -->
+
+        <p>A New World Tech, é uma loja online que trás uma experiência inovadora para o usuário, oferecendo tudo
+          que
+          á de melhor no mundo tecnologico.</p> <!-- Paragrafo da Home -->
+
+        <button class="home-button"><a href="#products">Saiba Mais</a></button> <!-- Botao da Home -->
+      </div> <!-- Fim do home-text -->
+
+      <img src="./assets/img-logo.png" alt="imagem logo" class="home-img"> <!-- Img Home -->
+
+    </section> <!-- Fim da section home -->
+
+    <section class="products" id="products"> <!-- Inicio da section products -->
+      <h2><small>Nossos</small> Produtos</h2> <!-- Titulo da section products -->
+
+      <div class="swiper"> <!-- Swiper inicio -->
+        <div class="swiper-wrapper"> <!-- Wrapper inicio -->
+          <!-- Slides inicio -->
+          <div class="swiper-slide"> <!-- Slide 1 inicio -->
+            <img src="./assets/img-notebook.jpg" alt="imagem-notebook"> <!-- img slide -->
+
+            <article> <!-- Artigo inicio -->
+              <h3>Notebooks</h3>
+              <p>Leveza, potência e alta performance para quem busca produtividade em qualquer lugar.</p>
+              <a href="#products" class="btn-slide">Saiba Mais</a>
+            </article> <!-- Artigo fim -->
+          </div> <!-- Fim slide 1 -->
+
+          <div class="swiper-slide"> <!-- Slide 2 inicio -->
+            <img src="./assets/img-smartphone.jpg" alt="imagem-smartphone"> <!-- img slide -->
+
+            <article> <!-- Artigo inicio -->
+              <h3>SmartPhones</h3>
+              <p>Desempenho rápido, câmeras incríveis e tudo o que você precisa no seu dia a dia — na palma da sua
+                mão.
+              </p>
+              <a href="#products" class="btn-slide">Saiba Mais</a>
+            </article> <!-- Artigo fim -->
+          </div> <!-- Fim slide 2 -->
+
+          <div class="swiper-slide"> <!-- Slide 3 inicio -->
+            <img src="./assets/img-tablet.jpg" alt="imagem-tablet"> <!-- img slide -->
+
+            <article> <!-- Artigo inicio -->
+              <h3>Tablets</h3>
+              <p>O equilíbrio ideal entre tela grande e portabilidade — perfeitos para estudar, trabalhar ou se
+                entreter.</p>
+              <a href="#products" class="btn-slide">Saiba Mais</a>
+            </article> <!-- Artigo fim -->
+
+          </div> <!-- Fim slide 3 -->
+          <div class="swiper-slide"> <!-- Slide 4 inicio -->
+            <img src="./assets/img-watch.jpg" alt="imagem-watch"> <!-- img slide -->
+
+            <article> <!-- Artigo inicio -->
+              <h3>SmartWatchs</h3>
+              <p>Tecnologia no seu pulso: monitore sua saúde, receba notificações e eleve seu estilo.</p>
+              <a href="#products" class="btn-slide">Saiba Mais</a>
+            </article> <!-- Artigo fim -->
+          </div> <!-- Fim slide 4 -->
+          <!-- Slides fim -->
+        </div> <!-- Wrapper fim -->
+
+        <!-- botões de navegação -->
+        <div class="swiper-button-prev" title="Voltar"></div>
+        <div class="swiper-button-next" title="Avançar"></div>
+      </div> <!-- Swiper fim -->
+    </section> <!-- Inicio da section products -->
+
+    <section class="about" id="about"> <!-- Inicio da section about -->
+      <h2><small>Sobre</small> Nós</h2> <!-- Titulo da section about -->
+
+      <div class="about-card"> <!-- Inicio do about-card -->
+        <img src="./assets/img-about.png" alt="imagem-sobre" /> <!-- Img about-card -->
+        <div class="about-text"> <!-- Inicio do about-text -->
+          <h2>Conectando você ao futuro</h2>
+          <p>
+            Somos apaixonados por tecnologia e inovação. Aqui, você encontra os melhores smartphones, notebooks,
+            smartwatches e tablets com qualidade garantida e entrega rápida.
+          </p>
+          <a href="#products" class="btn-saiba-mais">Saiba mais</a>
+        </div> <!-- Fim do about-text -->
+      </div> <!-- Fim do about-card -->
+    </section> <!-- Fim da section about -->
+
+    <section class="contacts" id="contacts"> <!-- Inicio da section contact -->
+      <h2><small>Entre</small> em Contato</h2> <!-- Titulo da section contact -->
+
+      <div class="content-contacts">
+        <form action="#contacts"> <!-- Inicio do form -->
+          <h3><small>Vamos</small> Conversar ?</h3>
+          <input type="text" placeholder="Digite seu nome e sobrenome!" required>
+          <input type="text" placeholder="Digite seu e-mail!" required>
+          <input type="number" min="11" placeholder="Ex: (xx) xxxxx-xxxx" required>
+          <textarea placeholder="Digite o assunto!" required></textarea>
+          <button type="submit">Enviar</button>
+        </form> <!-- Fim do form -->
+
+        <div class="contacts-social"> <!-- Inicio do contacts-social -->
+          <a href="#contacts">
+            <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+          </a>
+          <a href="#contacts">
+            <i class="fa-brands fa-instagram" title="Intagram"></i>
+          </a>
+          <a href="#contacts">
+            <i class="fa-brands fa-whatsapp" title="WhatsApp"></i>
+          </a>
+          <a href="#contacts">
+            <i class="fa-brands fa-x-twitter" title="X-Twitter"></i>
+          </a>
+        </div> <!-- Fim do contacts-social -->
+    </section> <!-- Fim da section contact -->
+
+    <footer> <!-- Inicio do Footer -->
+      &copy; 2025 - Todos os direitos reservados. Desenvolvido por <a href="https://github.com/ailtonjr11"><mark>Ailton
+          Junior</mark></a>
+    </footer> <!-- Fim do Footer -->
+  </main> <!-- Fim do Main -->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Link do Swiper -->
+<script src="./scripts.js"></script> <!-- Link do JS -->
+
+</html>

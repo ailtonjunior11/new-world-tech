@@ -1,0 +1,7 @@
+@import "./global.css";
+
+@import "./components/home.css";
+@import "./components/menu.css";
+@import "./components/products.css";
+@import "./components/about.css";
+@import "./components/contacts.css";
