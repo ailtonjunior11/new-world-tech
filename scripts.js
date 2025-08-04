@@ -34,9 +34,7 @@ background.addEventListener("click", () => {
   background.classList.remove("active");
 
   document.body.style.backgroundColor = "#c6d9e7";
-}); // Aqui se adiciona o evento de clique no background, que remove a classe "active" do menu lateral, do conteúdo principal e do botão do menu, e também muda a cor de fundo do body.
 
-background.addEventListener("click", () => {
   if (menuButtonOpen.style.delay === "inline") {
     menuButtonOpen.style.display = "none";
     menuButtonClose.style.display = "inline";
@@ -44,7 +42,7 @@ background.addEventListener("click", () => {
     menuButtonOpen.style.display = "inline";
     menuButtonClose.style.display = "none";
   } // Nesse evento, quando o usuário clicar na área de fundo, o menu lateral, o conteúdo principal e o botão do menu são fechados.
-});
+}); // Aqui se adiciona o evento de clique no background, que remove a classe "active" do menu lateral, do conteúdo principal e do botão do menu, e também muda a cor de fundo do body.
 
 // Swiper sendo inicializado
 const swiper = new Swiper(".swiper", {

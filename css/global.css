@@ -19,7 +19,7 @@
 
 body {
   min-height: 100dvh;
-  background-color: var(--text-color);
+  background-color: var(--background-color);
   transition: background-color 0.5s ease;
 }
 
@@ -31,15 +31,15 @@ section {
   min-height: 100dvh;
   margin-left: 5rem;
   padding: 2.5rem;
-  color: var(--text-secondary-color);
-  background-color: var(--text-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
   transition: all 0.5s ease;
 }
 
 .main-content.active {
   margin-left: 14.375rem;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 .background {
@@ -83,8 +83,8 @@ footer a {
 footer a mark {
   padding: 0.2rem 1rem;
   border-radius: 0.5rem;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 /* Responsividade */
@@ -92,7 +92,7 @@ footer a mark {
 /* Telas menores celulares */
 @media (min-width: 320px) {
   .main-content {
-    margin-left: 1rem;
+    margin-left: 0rem;
     padding: 5rem 1rem 0;
   }
 
