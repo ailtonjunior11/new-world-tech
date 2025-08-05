@@ -5,6 +5,7 @@ const menuButton = document.querySelector(".menu-button");
 const menuButtonOpen = menuButton.querySelector(".open-button");
 const menuButtonClose = menuButton.querySelector(".close-button");
 const sideMenu = document.querySelector(".side-menu");
+const linkMenu = document.querySelectorAll(".link-menu");
 const mainContent = document.querySelector(".main-content");
 const background = document.querySelector(".background");
 
@@ -15,7 +16,7 @@ menuButton.addEventListener("click", () => {
   } else {
     menuButtonOpen.style.display = "none";
     menuButtonClose.style.display = "inline";
-  }
+  } // Aqui se verifica se o botão de abrir está visível, se sim, ele é fechado, caso contrário, ele é aberto
 
   sideMenu.classList.toggle("active");
   mainContent.classList.toggle("active");
@@ -23,8 +24,8 @@ menuButton.addEventListener("click", () => {
   background.classList.toggle("active");
 
   document.body.style.backgroundColor = sideMenu.classList.contains("active")
-    ? "#34495e"
-    : "#c6d9e7";
+    ? "#c6d9e7"
+    : "#34495e";
 }); // Aqui se adiciona o evento de clique no botão do menu, que adiciona ou remove a classe "active" do menu lateral, do conteúdo principal e do botão do menu, e também muda a cor de fundo do body.
 
 background.addEventListener("click", () => {
@@ -33,7 +34,7 @@ background.addEventListener("click", () => {
   menuButton.classList.remove("active");
   background.classList.remove("active");
 
-  document.body.style.backgroundColor = "#c6d9e7";
+  document.body.style.backgroundColor = "#34495e";
 
   if (menuButtonOpen.style.delay === "inline") {
     menuButtonOpen.style.display = "none";
@@ -43,6 +44,23 @@ background.addEventListener("click", () => {
     menuButtonClose.style.display = "none";
   } // Nesse evento, quando o usuário clicar na área de fundo, o menu lateral, o conteúdo principal e o botão do menu são fechados.
 }); // Aqui se adiciona o evento de clique no background, que remove a classe "active" do menu lateral, do conteúdo principal e do botão do menu, e também muda a cor de fundo do body.
+
+function toggleMenu() {
+  document.querySelector(".side-menu").classList.toggle("active");
+  document.querySelector(".menu-button").classList.toggle("active");
+  document.body.style.backgroundColor = "#34495e";
+
+  background.classList.remove("active");
+  mainContent.classList.remove("active");
+
+  if (menuButtonOpen.style.display === "none") {
+    menuButtonOpen.style.display = "inline";
+    menuButtonClose.style.display = "none";
+  } else {
+    menuButtonOpen.style.display = "none";
+    menuButtonClose.style.display = "inline";
+  }
+}
 
 // Swiper sendo inicializado
 const swiper = new Swiper(".swiper", {

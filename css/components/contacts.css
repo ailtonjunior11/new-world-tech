@@ -28,6 +28,7 @@ form {
   padding: 1rem;
   border-radius: 0.8rem;
   background-color: var(--background-color);
+  border: solid 0.1rem var(--text-color);
 }
 
 form h3 {
@@ -64,6 +65,7 @@ form button {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: #ffffff;
 }
 
 form button:hover {
