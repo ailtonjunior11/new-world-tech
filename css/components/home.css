@@ -31,8 +31,48 @@
 }
 
 .home-text h1 {
-  font-size: 3rem;
+  display: flex;
   font-weight: 500;
+}
+
+.palavra-animada {
+  position: relative;
+  height: 1.3em;
+  overflow: hidden;
+}
+
+.palavra-animada .lista {
+  display: flex;
+  flex-direction: column;
+  animation: subirPalavra 9s infinite;
+}
+
+.lista span {
+  height: 1.2em;
+  transition: transform 0.7s ease-in-out;
+  color: var(--text-color);
+}
+
+@keyframes subirPalavra {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-1.2em);
+  }
+  50%,
+  70% {
+    transform: translateY(-2.4em);
+  }
+  75%,
+  90% {
+    transform: translateY(-3.6em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home-text p {
@@ -67,7 +107,6 @@
 
   .home img {
     width: 80%;
-    /* display: none; */
   }
 
   .home-text {
@@ -140,10 +179,11 @@
 
   .home-text {
     max-width: 44.6rem;
+    align-items: start;
   }
 
   .home-text h1 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
   }
 
   .home-text p {

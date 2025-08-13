@@ -62,7 +62,8 @@ article a {
 .swiper-button-prev {
   position: absolute;
   top: 60%;
-  width: 3rem;
+  width: 2.2rem;
+  height: 2.2rem;
   margin-top: -1.875rem;
   cursor: pointer;
   border-radius: 50%;
@@ -85,8 +86,6 @@ article a {
   .swiper-button-next,
   .swiper-button-prev {
     top: 50%;
-    width: 2.2rem;
-    height: 2.2rem;
     margin-top: 0;
   }
 
