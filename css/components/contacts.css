@@ -65,8 +65,8 @@ form button {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
-  background-color: #ffffff;
-  color: var(--text-secondary-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 form button:hover {

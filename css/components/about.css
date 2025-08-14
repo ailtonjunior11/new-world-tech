@@ -46,15 +46,12 @@
   display: inline-block;
   color: #fff;
   padding: 0.75rem 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 0.5rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
-.btn-saiba-mais:hover {
-  background-color: var(--primary-color);
-}
 /* Responsividade */
 
 /* Tela pequena celulares */

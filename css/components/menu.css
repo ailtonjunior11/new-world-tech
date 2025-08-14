@@ -40,10 +40,6 @@
   font-size: 1.4375rem;
 }
 
-.side-menu ul li:hover {
-  background-color: var(--secondary-color);
-}
-
 .side-menu ul li a i:hover {
   transform: translateX(-0.3125rem) rotate(10deg);
 }
@@ -66,7 +62,7 @@
 }
 
 .menu-button:hover {
-  background-color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .menu-button.active {
@@ -75,4 +71,12 @@
 
 .close-button {
   display: none;
+}
+
+/* Responsividade */
+
+@media (min-width: 1280px) {
+  .side-menu ul li:hover {
+    background-color: var(--primary-color);
+  }
 }

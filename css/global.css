@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2980b9;
-  --text-color: #d4fcfe;
-  --text-secondary-color: #002246;
-  --background-color: #15202a;
+  --primary-color: #8f00ff;
+  --secondary-color: #00ffb3;
+  --text-color: #ffffff;
+  --text-secondary-color: #1a1a2e;
+  --background-color: #0f2027;
 }
 
 * {
@@ -38,8 +38,8 @@ section {
 
 .main-content.active {
   margin-left: 14.375rem;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .background {
@@ -77,14 +77,14 @@ footer {
 
 footer a {
   font-size: 1rem;
-  color: var(--text-secondary-color);
 }
 
 footer a mark {
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 0.5rem;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: var(--background-color);
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.356);
+  color: var(--primary-color);
 }
 
 /* Responsividade */
