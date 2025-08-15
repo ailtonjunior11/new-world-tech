@@ -128,6 +128,24 @@ footer a mark {
   }
 }
 
+html {
+  scrollbar-color: var(--background-color) var(--primary-color);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
 /* Telas medias tablets */
 @media (min-width: 768px) {
   .main-content {

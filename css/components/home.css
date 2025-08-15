@@ -7,7 +7,7 @@
 .home-img {
   position: relative;
   width: 25.5rem;
-  animation: move 6s ease-in-out infinite;
+  animation: move 8s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -188,7 +188,7 @@
   }
 
   .home img {
-    width: 34%;
+    width: 40%;
   }
 
   .home-text {
