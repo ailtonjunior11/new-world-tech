@@ -87,6 +87,27 @@ footer a mark {
   color: var(--primary-color);
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.8rem;
+  background-color: var(--text-color);
+  border: none;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Responsividade */
 
 /* Telas menores celulares */
@@ -127,5 +148,9 @@ footer a mark {
 
   .main-content.active {
     margin-left: 14.375rem;
+  }
+
+  #back-to-top:hover {
+    opacity: 0.8;
   }
 }

@@ -1,3 +1,21 @@
+// Ininialização do botão subir para o topo
+const backToTopButton = document.getElementById("back-to-top");
+const scrollThreshold = 200; // Aqui se define o limite de rolagem para que o botão apareça.
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > scrollThreshold) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+}); // Aqui se adiciona um evento de rolagem na janela, que verifica se a rolagem é maior que o limite definido, e mostra ou esconde o botão de voltar ao topo.
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+  });
+}); // Aqui se adiciona um evento de clique no botão de voltar ao topo.
+
 // Menu sendo inicializado
 
 // Aqui se busca os elementos do HTML que serão manipulados pelo JavaScript

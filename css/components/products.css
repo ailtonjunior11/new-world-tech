@@ -68,7 +68,7 @@ article a {
   cursor: pointer;
   border-radius: 50%;
   border: solid 0.0625rem var(--text-color);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
   z-index: 10;
 }

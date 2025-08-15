@@ -81,9 +81,9 @@
 
 .home-text p {
   font-size: 1.375rem;
-  max-width: 550px;
+  max-width: 34.375rem;
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .home-button {
@@ -91,10 +91,9 @@
 }
 
 .home-button a {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 10px 40px;
-
+  padding: 0.625rem 2.5rem;
   border-radius: 5px;
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -120,7 +119,8 @@
   }
 
   .home-text h1 {
-    font-size: 2.1rem;
+    flex-direction: column;
+    font-size: 1.88rem;
   }
 
   .home-text p {
@@ -139,16 +139,24 @@
   }
 
   .home-text {
+    width: 100%;
     text-align: center;
+    align-items: flex-start;
   }
 
   .home-text h1 {
-    font-size: 2.4rem;
+    flex-direction: row;
+    font-size: 2.2rem;
   }
 
   .home-text p {
-    max-width: 500px;
-    font-size: 1.35rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-button a {
+    font-size: 1.1rem;
+    padding: 0.7rem 3.125rem;
   }
 }
 
@@ -164,11 +172,13 @@
 
   .home-text {
     max-width: 36.9rem;
+    text-align: left;
   }
 
   .home-text p {
     font-size: 1.375rem;
-    max-width: 32rem;
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -187,12 +197,13 @@
   }
 
   .home-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.65rem;
   }
 
   .home-text p {
     font-size: 1.375rem;
     max-width: 38rem;
+    text-align: start;
   }
 
   .home-button:hover {

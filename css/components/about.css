@@ -103,7 +103,17 @@
   }
 
   .about-text {
+    text-align: left;
     padding: 1.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    line-height: 1.5;
+    max-width: 25rem;
   }
 
   .about-card img:hover {
