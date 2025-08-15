@@ -7,7 +7,7 @@
 .home-img {
   position: relative;
   width: 25.5rem;
-  animation: move 8s ease-in-out infinite;
+  animation: move 6s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -95,7 +95,7 @@
   font-weight: 500;
   padding: 0.625rem 2.5rem;
   border-radius: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color);
   box-shadow: 3px 3px 5px var(--background-color);
   transition: background-color 0.3s ease;
@@ -141,7 +141,7 @@
   .home-text {
     width: 100%;
     text-align: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .home-text h1 {
@@ -167,7 +167,7 @@
   }
 
   .home img {
-    width: 30%;
+    width: 35%;
   }
 
   .home-text {

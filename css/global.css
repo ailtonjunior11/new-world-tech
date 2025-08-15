@@ -1,8 +1,7 @@
 :root {
   --primary-color: #8f00ff;
-  --secondary-color: #00ffb3;
+  --secondary-color: #ef7656;
   --text-color: #ffffff;
-  --text-secondary-color: #1a1a2e;
   --background-color: #0f2027;
 }
 
@@ -17,10 +16,32 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scrollbar-color: var(--primary-color) var(--background-color);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
 body {
   min-height: 100dvh;
-  background-color: var(--background-color);
-  transition: background-color 0.5s ease;
+  background: linear-gradient(
+    135deg,
+    var(--background-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-color) 100%
+  );
 }
 
 section {
@@ -32,14 +53,11 @@ section {
   margin-left: 5rem;
   padding: 2.5rem;
   color: var(--text-color);
-  background-color: var(--background-color);
   transition: all 0.5s ease;
 }
 
 .main-content.active {
   margin-left: 14.375rem;
-  background-color: var(--primary-color);
-  color: var(--text-color);
 }
 
 .background {
@@ -126,24 +144,6 @@ footer a mark {
     padding: 1.1rem 0;
     margin-top: 0;
   }
-}
-
-html {
-  scrollbar-color: var(--background-color) var(--primary-color);
-  scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-  width: 0.6rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--background-color);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--primary-color);
 }
 
 /* Telas medias tablets */

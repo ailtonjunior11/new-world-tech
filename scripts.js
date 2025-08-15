@@ -40,10 +40,6 @@ menuButton.addEventListener("click", () => {
   mainContent.classList.toggle("active");
   menuButton.classList.toggle("active");
   background.classList.toggle("active");
-
-  document.body.style.backgroundColor = sideMenu.classList.contains("active")
-    ? "#8f00ff"
-    : "#0f2027";
 }); // Aqui se adiciona o evento de clique no botão do menu, que adiciona ou remove a classe "active" do menu lateral, do conteúdo principal e do botão do menu, e também muda a cor de fundo do body.
 
 background.addEventListener("click", () => {
@@ -51,8 +47,6 @@ background.addEventListener("click", () => {
   mainContent.classList.remove("active");
   menuButton.classList.remove("active");
   background.classList.remove("active");
-
-  document.body.style.backgroundColor = "#0f2027";
 
   if (menuButtonOpen.style.delay === "inline") {
     menuButtonOpen.style.display = "none";
@@ -66,7 +60,6 @@ background.addEventListener("click", () => {
 function toggleMenu() {
   document.querySelector(".side-menu").classList.toggle("active");
   document.querySelector(".menu-button").classList.toggle("active");
-  document.body.style.backgroundColor = "#0f2027";
 
   background.classList.remove("active");
   mainContent.classList.remove("active");

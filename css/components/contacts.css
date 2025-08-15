@@ -149,5 +149,6 @@ form button:active {
 
   .contacts-social i:hover {
     transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+    color: var(--primary-color);
   }
 }
