@@ -126,6 +126,20 @@ footer a mark {
   opacity: 1;
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    135deg,
+    var(--background-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-color) 100%
+  );
+}
+
 /* Responsividade */
 
 /* Telas menores celulares */
