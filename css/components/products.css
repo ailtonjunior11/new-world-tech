@@ -15,17 +15,20 @@
   display: flex;
   flex-direction: column;
   border-radius: 0.625rem;
-  background-color: var(--background-color);
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.504);
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: auto;
+  margin: 0 auto;
+  width: 14rem;
   object-fit: fill;
-  border-top-left-radius: 0.3125rem;
-  border-top-right-radius: 0.3125rem;
-  border-bottom-right-radius: 50%;
+  transition: transform 0.3s ease-in-out;
 }
 
 article {
@@ -45,7 +48,7 @@ article h3 {
 
 article p {
   font-size: 1rem;
-  color: #ffffff80;
+  color: #ffffffbf;
 }
 
 article a {
@@ -53,27 +56,27 @@ article a {
   font-weight: 500;
   padding: 0.8rem 1.25rem;
   border-radius: 0.3125rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 60%;
-  width: 2.2rem;
-  height: 2.2rem;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
   margin-top: -1.875rem;
   cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  /* border-radius: 50%;
+  background-color: var(-); */
+  color: var(--text-color);
   z-index: 10;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 1.5625rem;
+  font-size: 1.6rem;
   font-weight: 900;
 }
 
@@ -89,7 +92,7 @@ article a {
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 700;
   }
 }

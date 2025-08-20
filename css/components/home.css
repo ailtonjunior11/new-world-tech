@@ -7,27 +7,16 @@
 .home-img {
   position: relative;
   width: 25.5rem;
-  animation: move 6s ease-in-out infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .home-text {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: center;
   gap: 20px;
   max-width: 700px;
+  height: 17.625rem;
 }
 
 .home-text h1 {
@@ -54,7 +43,7 @@
 }
 
 .lista .palavras {
-  color: var(--secondary-color);
+  color: #ff9448;
 }
 
 @keyframes subirPalavra {
@@ -83,22 +72,17 @@
   font-size: 1.375rem;
   max-width: 34.375rem;
   text-align: justify;
-  margin-bottom: 0.9375rem;
 }
 
-.home-button {
-  transition: transform 0.2s ease-in-out;
-}
-
-.home-button a {
+.home-btn {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.625rem 2.5rem;
   border-radius: 5px;
   background-color: var(--secondary-color);
   color: var(--text-color);
-  box-shadow: 3px 3px 5px var(--background-color);
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1;
 }
 
 @media (min-width: 320px) {
@@ -151,7 +135,6 @@
 
   .home-text p {
     font-size: 0.9rem;
-    margin-bottom: 2rem;
   }
 
   .home-button a {
@@ -188,7 +171,7 @@
   }
 
   .home img {
-    width: 40%;
+    width: 46%;
   }
 
   .home-text {
@@ -206,7 +189,7 @@
     text-align: start;
   }
 
-  .home-button:hover {
-    transform: scale(1.1);
+  .home-btn:hover {
+    transform: scale(1.03);
   }
 }

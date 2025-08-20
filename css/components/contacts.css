@@ -27,8 +27,12 @@ form {
   height: auto;
   padding: 1rem;
   border-radius: 0.8rem;
-  background-color: var(--background-color);
-  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.356);
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.504);
 }
 
 form h3 {
@@ -65,7 +69,7 @@ form button {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
@@ -82,8 +86,12 @@ form button:active {
   gap: 5rem;
   padding: 1rem 3rem;
   border-radius: 0.5rem;
-  background-color: var(--background-color);
-  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.356);
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.504);
 }
 
 .contacts-social i {
@@ -148,7 +156,7 @@ form button:active {
   }
 
   .contacts-social i:hover {
-    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-    color: var(--primary-color);
+    color: var(--text-color);
+    text-shadow: 0 0 0.25rem rgb(255, 255, 255);
   }
 }

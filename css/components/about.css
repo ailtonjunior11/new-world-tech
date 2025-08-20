@@ -12,10 +12,14 @@
   text-align: center;
   width: 80%;
   height: auto;
-  background-color: var(--background-color);
   border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.504);
   overflow: hidden;
-  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.356);
 }
 
 .about-card img {
@@ -37,7 +41,7 @@
 
 .about-text p {
   font-size: 1rem;
-  color: var(--text-color);
+  color: #ffffffbf;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -46,10 +50,22 @@
   display: inline-block;
   color: #fff;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 0.5rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
+}
+
+.about-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-social a i {
+  font-size: 1.35rem;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Responsividade */
@@ -70,23 +86,30 @@
 
   .about-text h2 {
     font-size: 1.3rem;
-    color: var(--text-color);
   }
 
   .about-text p {
     font-size: 1rem;
     line-height: 1.3;
   }
+
+  .about-social {
+    justify-content: center;
+  }
 }
 
 /* Telas medias tablets */
 @media (min-width: 768px) {
   .about-card {
-    width: 80%;
+    width: 60%;
   }
 
   .about-card img {
     height: 18rem;
+  }
+
+  .about-social {
+    margin-top: 1rem;
   }
 }
 
@@ -118,5 +141,15 @@
 
   .about-card img:hover {
     transform: scale(1.01);
+  }
+
+  .about-social {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-social a i:hover {
+    text-shadow: 0 0 0.25rem rgb(255, 255, 255);
   }
 }

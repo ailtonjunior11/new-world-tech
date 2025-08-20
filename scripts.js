@@ -71,7 +71,7 @@ function toggleMenu() {
     menuButtonOpen.style.display = "none";
     menuButtonClose.style.display = "inline";
   }
-}
+} // Aqui se cria a função toggleMenu, que é chamada quando o usuário clica em um link do menu lateral, e fecha o menu lateral, o conteúdo principal e o botão do menu.
 
 // Swiper sendo inicializado
 const swiper = new Swiper(".swiper", {
@@ -222,3 +222,163 @@ particlesJS({
   retina_detect: true,
 }); // Aqui se configura o Particles.js, que é um plugin para criar partículas animadas no fundo da página.
 // O Particles.js é usado para criar um efeito visual de partículas que se movem e interagem com o mouse do usuário.
+
+// ScrollReveal sendo inicializado
+const sr = ScrollReveal({ reset: true });
+
+// Seção Home
+sr.reveal("h1", {
+  origin: "left",
+  distance: "100px",
+  duration: 1700,
+  delay: 200,
+});
+
+sr.reveal(".home-text p", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1800,
+  delay: 500,
+});
+
+sr.reveal(".home-btn", {
+  origin: "left",
+  distance: "200px",
+  duration: 2000,
+  delay: 700,
+});
+
+sr.reveal(".home-img", {
+  origin: "top",
+  distance: "100px",
+  duration: 2800,
+  delay: 500,
+});
+
+// Seção About
+sr.reveal(".about-img", {
+  distance: "0px",
+  opacity: 0,
+  duration: 2000,
+  delay: 300,
+});
+
+sr.reveal(".facebook-link", {
+  origin: "top",
+  distance: "100px",
+  duration: 1100,
+  delay: 1050,
+});
+
+sr.reveal(".instagram-link", {
+  origin: "top",
+  distance: "120px",
+  duration: 1200,
+  delay: 1150,
+});
+
+sr.reveal(".whatsapp-link", {
+  origin: "top",
+  distance: "140px",
+  duration: 1300,
+  delay: 1250,
+});
+
+sr.reveal(".x-twitter-link", {
+  origin: "top",
+  distance: "160px",
+  duration: 1400,
+  delay: 1350,
+});
+
+sr.reveal(".about-text h2", {
+  origin: "right",
+  distance: "150px",
+  duration: 1600,
+  delay: 500,
+});
+
+sr.reveal(".about-text p", {
+  origin: "right",
+  distance: "250px",
+  duration: 1600,
+  delay: 700,
+});
+
+sr.reveal(".about-text .btn-saiba-mais", {
+  origin: "bottom",
+  distance: "280px",
+  duration: 1500,
+  delay: 800,
+});
+
+// Seção contacts
+sr.reveal(".contact-facebook-link", {
+  distance: "0",
+  opacity: 0,
+  duration: 1600,
+  delay: 300,
+});
+
+sr.reveal(".contact-instagram-link", {
+  distance: "0",
+  opacity: 0,
+  duration: 1600,
+  delay: 600,
+});
+
+sr.reveal(".contact-whatsapp-link", {
+  distance: "0",
+  opacity: 0,
+  duration: 1600,
+  delay: 900,
+});
+
+sr.reveal(".contact-x-twitter-link", {
+  distance: "0",
+  opacity: 0,
+  duration: 1600,
+  delay: 1200,
+});
+
+sr.reveal("form h3", {
+  origin: "top",
+  distance: "25px",
+  duration: 1000,
+  delay: 300,
+});
+
+sr.reveal("form .input-name", {
+  origin: "bottom",
+  distance: "30px",
+  duration: 1200,
+  delay: 500,
+});
+
+sr.reveal("form .input-email", {
+  origin: "bottom",
+  distance: "40px",
+  duration: 1300,
+  delay: 700,
+});
+
+sr.reveal("form .input-phone", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1400,
+  delay: 900,
+});
+
+sr.reveal("form .textarea", {
+  origin: "bottom",
+  distance: "60px",
+  duration: 1500,
+  delay: 1100,
+});
+
+sr.reveal("form .btn-submit", {
+  origin: "bottom",
+  distance: "25px",
+  duration: 1600,
+  delay: 1200,
+});

@@ -70,11 +70,12 @@
           </span>
         </h1> <!-- Titulo da Home -->
 
-        <p>A New World Tech, é uma loja online que trás uma experiência inovadora para o usuário, oferecendo tudo
+        <p>A New World Tech, é uma loja online que trás uma experiência inovadora para o usuário,
+          oferecendo tudo
           que
           á de melhor no mundo tecnologico.</p> <!-- Paragrafo da Home -->
 
-        <button class="home-button"><a href="#products">Saiba Mais</a></button> <!-- Botao da Home -->
+        <a class="home-btn" href="#products">Saiba Mais</a> <!-- Botao da Home -->
       </div> <!-- Fim do home-text -->
 
       <img src="./assets/logo-image.png" alt="Essa é a imagem da seção inicio da página!" class="home-img">
@@ -89,7 +90,7 @@
         <div class="swiper-wrapper"> <!-- Wrapper inicio -->
           <!-- Slides inicio -->
           <div class="swiper-slide"> <!-- Slide 1 inicio -->
-            <img src="./assets/img-notebook.jpg" alt="imagem-notebook"> <!-- img slide -->
+            <img src="./assets/notebook.png" alt="Imagem do produto notebook"> <!-- img slide -->
 
             <article> <!-- Artigo inicio -->
               <h3>Notebooks</h3>
@@ -99,7 +100,7 @@
           </div> <!-- Fim slide 1 -->
 
           <div class="swiper-slide"> <!-- Slide 2 inicio -->
-            <img src="./assets/img-smartphone.jpg" alt="imagem-smartphone"> <!-- img slide -->
+            <img src="./assets/phone.png" alt="Imagem do produto samrtphone"> <!-- img slide 2 -->
 
             <article> <!-- Artigo inicio -->
               <h3>SmartPhones</h3>
@@ -111,7 +112,7 @@
           </div> <!-- Fim slide 2 -->
 
           <div class="swiper-slide"> <!-- Slide 3 inicio -->
-            <img src="./assets/img-tablet.jpg" alt="imagem-tablet"> <!-- img slide -->
+            <img src="./assets/tablet.png" alt="Imagem do produto tablet"> <!-- img slide -->
 
             <article> <!-- Artigo inicio -->
               <h3>Tablets</h3>
@@ -122,11 +123,12 @@
 
           </div> <!-- Fim slide 3 -->
           <div class="swiper-slide"> <!-- Slide 4 inicio -->
-            <img src="./assets/img-watch.jpg" alt="imagem-watch"> <!-- img slide -->
+            <img src="./assets/relogio.png" alt="Imagem do produto smartwatch"> <!-- img slide -->
 
             <article> <!-- Artigo inicio -->
               <h3>SmartWatchs</h3>
-              <p>Tecnologia no seu pulso: monitore sua saúde, receba notificações e eleve seu estilo.</p>
+              <p>Tecnologia no seu pulso: monitore sua saúde, receba notificações com estilo e modernidade que você
+                merece.</p>
               <a href="#products" class="btn-slide">Saiba Mais</a>
             </article> <!-- Artigo fim -->
           </div> <!-- Fim slide 4 -->
@@ -143,8 +145,25 @@
       <h2><small>Sobre</small> Nós</h2> <!-- Titulo da section about -->
 
       <div class="about-card"> <!-- Inicio do about-card -->
-        <img src="./assets/img-about.png" alt="imagem-sobre" /> <!-- Img about-card -->
+        <img src="./assets/img-sobre.png" alt="Imagem da seção sobre, falando sobre a loja online" class="about-img" />
+        <!-- Img about-card -->
+
         <div class="about-text"> <!-- Inicio do about-text -->
+          <div class="about-social"> <!-- Inicio do contacts-social -->
+            <a href="#contacts" class="facebook-link">
+              <i class="fa-brands fa-facebook-f" title="Icone de rede social - Facebook"></i>
+            </a>
+            <a href="#contacts" class="instagram-link">
+              <i class="fa-brands fa-instagram" title="Icone de rede social - Instagram"></i>
+            </a>
+            <a href="#contacts" class="whatsapp-link">
+              <i class="fa-brands fa-whatsapp" title="Icone de rede social - WhatsApp"></i>
+            </a>
+            <a href="#contacts" class="x-twitter-link">
+              <i class="fa-brands fa-x-twitter" title="Icone de rede social - X-Twitter"></i>
+            </a>
+          </div> <!-- Fim do contacts-social -->
+
           <h2>Conectando você ao futuro</h2>
           <p>
             Somos apaixonados por tecnologia e inovação. Aqui, você encontra os melhores smartphones, notebooks,
@@ -161,35 +180,36 @@
       <div class="content-contacts">
         <form action="#contacts"> <!-- Inicio do form -->
           <h3><small>Vamos</small> Conversar ?</h3>
-          <input type="text" placeholder="Digite seu nome e sobrenome!" required>
-          <input type="text" placeholder="Digite seu e-mail!" required>
-          <input type="number" min="11" placeholder="Ex: (xx) xxxxx-xxxx" required>
-          <textarea placeholder="Digite o assunto!" required></textarea>
-          <button type="submit">Enviar</button>
+          <input type="text" placeholder="Digite seu nome e sobrenome!" required class="input-name">
+          <input type="text" placeholder="Digite seu e-mail!" required class="input-email">
+          <input type="number" min="11" placeholder="Ex: (xx) xxxxx-xxxx" required class="input-phone">
+          <textarea placeholder="Digite o assunto!" required class="textarea"></textarea>
+          <button type="submit" class="btn-submit">Enviar</button>
         </form> <!-- Fim do form -->
 
         <div class="contacts-social"> <!-- Inicio do contacts-social -->
-          <a href="#contacts">
-            <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+          <a href="#contacts" class="contact-facebook-link">
+            <i class="fa-brands fa-facebook-f" title="Icone de rede social - Facebook"></i>
           </a>
-          <a href="#contacts">
-            <i class="fa-brands fa-instagram" title="Intagram"></i>
+          <a href="#contacts" class="contact-instagram-link">
+            <i class="fa-brands fa-instagram" title="Icone de rede social - Isntagram"></i>
           </a>
-          <a href="#contacts">
-            <i class="fa-brands fa-whatsapp" title="WhatsApp"></i>
+          <a href="#contacts" class="contact-whatsapp-link">
+            <i class="fa-brands fa-whatsapp" title=" Icone de rede social - WhatsApp"></i>
           </a>
-          <a href="#contacts">
-            <i class="fa-brands fa-x-twitter" title="X-Twitter"></i>
+          <a href="#contacts" class="contact-x-twitter-link">
+            <i class="fa-brands fa-x-twitter" title="Icone de rede social - X-Twitter"></i>
           </a>
         </div> <!-- Fim do contacts-social -->
     </section> <!-- Fim da section contact -->
 
     <footer> <!-- Inicio do Footer -->
-      &copy; 2025 - Todos os direitos reservados. <br> Desenvolvedor <a
-        href="https://github.com/ailtonjr11"><mark>Ailton
-          Junior</mark></a>
+      &copy; 2025 - Todos os direitos reservados. <br> Desenvolvedor <a href="https://github.com/ailtonjr11">Ailton
+        Junior</a>
     </footer> <!-- Fim do Footer -->
   </main> <!-- Fim do Main -->
+
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- Link do ScrollReveal -->
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Link do Swiper -->
